@@ -45,5 +45,14 @@ while game:
     for e in event.get():
         if e.type == QUIT:
             game = False
+            
+    window.fill(back)
+    racket1.update_l()
+    racket2.update_r()
 
-display.update()
+    racket1.reset()
+    racket2.reset()
+    ball.reset()
+
+
+    display.update()
